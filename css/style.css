@@ -1,0 +1,335 @@
+body {
+  font: 15px Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #F7F9F9;
+}
+
+/*Estilos Globales*/
+
+/* Invisible texto */
+figcaption {
+  display: none;
+  transition: all .5s;
+}
+
+/* Visible texto */
+figure:hover>figcaption {
+  display: block;
+  transition: all .5s;
+}
+
+.contenedor {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.boton1 {
+  height: 38px;
+  background-color: #e8491d;
+  border: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+  color: #ffff;
+}
+
+/*Encabezado*/
+header {
+  background-color: #ccc;
+  color: black;
+  padding-top: 30px;
+  min-height: 90px;
+  border-bottom: 5px solid #16A085;
+}
+
+header a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.social {
+  width: 60px;
+  position: fixed;
+  top: 50px;
+  right: 0;
+}
+
+
+.social {
+  top: 50%;
+  height: 205px;
+  margin-top: -100px;
+}
+
+header li {
+  float: left;
+  display: inline;
+  padding-top: 0px;
+  padding-right: 20px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+}
+
+header #marca {
+  float: left;
+}
+
+header #marca h1 {
+  margin: 0;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header .resaltado,
+header .actual a {
+  color: #16A085;
+  font-weight: bold;
+}
+
+.button1 {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  color: #333333;
+  padding-top: 8px;
+  padding-bottom: 7px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #16A085;
+  border-color: #d8d8d8;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 35px;
+}
+
+.button2 {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  color: #333333;
+  padding-top: 8px;
+  padding-bottom: 7px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #E74C3C;
+  border-color: #d8d8d8;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 35px;
+}
+
+header a:hover {
+  color: #16A085;
+  font-weight: bold;
+}
+
+/*cabecera*/
+#cabecera {
+  min-height: 400px;
+  background: url('../img/metro3.jpg')no-repeat 0 -300px;
+  text-align: center;
+  color: #fff;
+}
+
+#cabecera h1 {
+  margin-top: 100px;
+  font-size: 20px;
+}
+
+#cabecera p {
+  font-size: 20px;
+}
+
+/* formulario boletin */
+#boletin {
+  padding: 15px;
+  color: #fff;
+  background: #24282b;
+}
+
+#boletin h1 {
+  float: left;
+}
+
+#boletin form {
+  float: right;
+  margin-top: 15px;
+}
+
+#boletin input[type="email"] {
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+}
+
+/*cajas*/
+#cajas {
+  margin-top: 20px;
+}
+
+#cajas .caja {
+  float: left;
+  text-align: center;
+  width: 100%;
+  padding: 100px;
+}
+
+#cajas .caja img {
+  width: 400px;
+}
+
+/*cajas*/
+#cajass {
+  margin-top: 20px;
+}
+
+#cajass .cajas {
+  float: left;
+  text-align: center;
+  width: 40%;
+  padding: 80px;
+}
+
+#cajass .cajas img {
+  width: 200px;
+}
+
+/* lateral*/
+aside#Lateral {
+  float: right;
+  width: 35%;
+  margin-top: 15px;
+}
+
+.oscuro {
+  padding: 15px;
+  background-color: #cccc;
+  color: #ffff;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/*main col*/
+article#main-col {
+  float: left;
+  width: 65%;
+}
+
+/*servicios*/
+ul#servicios li {
+  list-style: none;
+  padding: 10px;
+  border: 1px solid #cccc;
+  margin-bottom: 10px;
+  background-color: #e6e6e6;
+
+}
+
+/* pie */
+footer {
+  padding: 20px;
+  margin-top: 20px;
+  color: #ffff;
+  background-color: #16A085;
+  text-align: center;
+
+}
+
+.slider {
+  display: flex;
+  width: 400%;
+  height: 450px;
+  margin-left: -100%;
+}
+
+.container-slider {
+  width: 100%;
+  max-width: 3000px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider__section {
+  width: 100%;
+}
+
+.slider__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider__btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.7);
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  font-weight: bold;
+  font-family: monospace;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider__btn:hover {
+  background: #fff;
+}
+
+.slider__btn--right {
+  right: 10px;
+}
+
+.slider__btn--left {
+  left: 10px;
+}
+
+/* Estilos CSS para el cuadro de diálogo de burbuja */
+#phone-dialog {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-150%, -50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+  /* Agregar bordes redondeados */
+  max-width: 300px;
+  /* Ancho máximo del cuadro de diálogo */
+  text-align: justify;
+  /* Alineación del contenido en el centro */
+}
+
+
+/* Estilos CSS para la flecha triangular que apunta al teléfono */
+#phone-arrow {
+  position: absolute;
+  top: -5px;
+  /* Ajustar la posición vertical según sea necesario */
+  left: 50%;
+  transform: translateX(-10%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 15px solid rgba(255, 255, 255, 0.7);
+  /* Color del fondo del cuadro de diálogo */
+}
