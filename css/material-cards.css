@@ -30,7 +30,7 @@
 .material-card {
     position: relative;
     height: 0;
-    padding-bottom: calc(100% - 16px);
+    padding-bottom: calc(100% - 40px);
     margin-bottom: 6.6em;
 }
 
@@ -39,7 +39,7 @@
     top: calc(100% - 16px);
     left: 0;
     width: 100%;
-    padding: 10px 16px;
+    padding: 10px 66px;
     color: #fff;
     font-size: 1.4em;
     line-height: 1.6em;
@@ -144,10 +144,10 @@
 .material-card .mc-description {
     position: absolute;
     top: 100%;
-    right: 30px;
-    left: 30px;
-    bottom: 54px;
-    overflow: hidden;
+    right: 80px;
+    left: 10px;
+    bottom: 4px;
+    overflow: 50px;
     opacity: 0;
     filter: alpha(opacity=0);
     -webkit-transition: all 1.2s;
@@ -195,46 +195,6 @@
     line-height: 52px;
     text-decoration: none;
     top: 200px;
-}
-
-.material-card .mc-footer a:nth-child(1) {
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
-}
-
-.material-card .mc-footer a:nth-child(2) {
-    -webkit-transition: all 0.6s;
-    -moz-transition: all 0.6s;
-    -ms-transition: all 0.6s;
-    -o-transition: all 0.6s;
-    transition: all 0.6s;
-}
-
-.material-card .mc-footer a:nth-child(3) {
-    -webkit-transition: all 0.7s;
-    -moz-transition: all 0.7s;
-    -ms-transition: all 0.7s;
-    -o-transition: all 0.7s;
-    transition: all 0.7s;
-}
-
-.material-card .mc-footer a:nth-child(4) {
-    -webkit-transition: all 0.8s;
-    -moz-transition: all 0.8s;
-    -ms-transition: all 0.8s;
-    -o-transition: all 0.8s;
-    transition: all 0.8s;
-}
-
-.material-card .mc-footer a:nth-child(5) {
-    -webkit-transition: all 0.9s;
-    -moz-transition: all 0.9s;
-    -ms-transition: all 0.9s;
-    -o-transition: all 0.9s;
-    transition: all 0.9s;
 }
 
 .material-card .img-container {
@@ -485,20 +445,6 @@
     border-left-color: transparent;
 }
 
-.material-card.Purple.mc-active h2:before {
-    border-top-color: transparent;
-    border-right-color: #16A085;
-    border-bottom-color: #16A085;
-    border-left-color: transparent;
-}
-
-.material-card.Purple.mc-active h2:after {
-    border-top-color: #16A085;
-    border-right-color: #16A085;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-}
-
 .material-card.Purple .mc-btn-action {
     background-color: #16A085;
 }
@@ -509,4 +455,8 @@
 
 .material-card.Purple .mc-footer h4 {
     color: #16A085;
+}
+
+.mc-description {
+    text-align: justify;
 }
