@@ -367,3 +367,7 @@ footer {
 .texto-centrado {
   text-align: center !important;
 }
+
+.table {
+  width: 80%;
+}

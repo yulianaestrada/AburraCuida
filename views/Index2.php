@@ -17,8 +17,8 @@
   <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,200,500,600,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/material-cards.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="../css/material-cards.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
@@ -34,10 +34,10 @@
 
       <nav>
         <ul>
-          <li><a href="Index.html">Inicio</a></li>
-          <li class="actual"><a href="Index2.html">Tipos de violencia</a></li>
+          <li><a href="Index.php">Inicio</a></li>
+          <li class="actual"><a href="Index2.php">Tipos de violencia</a></li>
           <li><a href="">Noticias</a></li>
-          <li><a href="Index3.html">Reportar</a>
+          <li><a href="Index3.php">Reportar</a>
           <li><a class="button1" data-bs-toggle="modal" data-bs-target="#exampleModal">Ingresar</a>
 
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -108,7 +108,7 @@
             </h2>
             <div class="mc-content">
               <div class="img-container">
-                <img class="img-responsive" src="img/V1.png" width="300">
+                <img class="img-responsive" src="../img/V1.png" width="300">
               </div>
               <div class="mc-description">
                 La violencia física se refiere a la utilización de la fuerza
@@ -130,7 +130,7 @@
             </h2>
             <div class="mc-content">
               <div class="img-container">
-                <img class="img-responsive" src="img/V2.png" width="300">
+                <img class="img-responsive" src="../img/V2.png" width="300">
               </div>
               <div class="mc-description">
                 La violencia verbal se refiere a la utilización de palabras,
@@ -153,7 +153,7 @@
             </h2>
             <div class="mc-content">
               <div class="img-container">
-                <img class="img-responsive" src="img/V3.png" width="300">
+                <img class="img-responsive" src="../img/V3.png" width="300">
               </div>
               <div class="mc-description">
                 La violencia sexual es un tipo de agresión sexual que involucra el uso de la fuerza,

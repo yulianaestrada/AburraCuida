@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/material-cards.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
@@ -35,10 +35,10 @@
 
             <nav>
                 <ul>
-                    <li><a href="Index.html">Inicio</a></li>
-                    <li><a href="Index2.html">Tipos de violencia</a></li>
+                    <li><a href="Index.php">Inicio</a></li>
+                    <li><a href="Index2.php">Tipos de violencia</a></li>
                     <li><a href="">Noticias</a></li>
-                    <li class="actual"><a href="Index3.html">Reportar</a>
+                    <li class="actual"><a href="Index3.php">Reportar</a>
                     <li><a class="button1" data-bs-toggle="modal" data-bs-target="#exampleModal">Ingresar</a>
 
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -80,22 +80,24 @@
     </header>
     </head>
 
-    <body>
+    <body id="page-top">
+    <form action="../includes/validar.php" method="POST">
+    <div id="form">
         <div class="form mx-auto input-center">
             <div class="nombre-apellido">
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="primernombre">
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Apellidos</label>
-                    <input type="text" class="form-control" id="segundonombre">
+                    <input type="text" class="form-control" id="apellido" name="apellido" required>
                 </div>
             </div>
             <div class="nombre-apellido">
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Tipo de identificación</label>
-                    <select class="form-select" aria-label="Default select example">
+                    <select class="form-select" aria-label="Default select example" id="tipo" name="tipo" required>
                         <option value="cc">Cédula Ciudadanía</option>
                         <option value="ce">Cédula Extranjera</option>
                         <option value="pp">Pasaporte</option>
@@ -106,13 +108,13 @@
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Identificación</label>
-                    <input type="text" class="form-control" id="identificación">
+                    <input type="text" class="form-control" id="identificación" name="identificacion" required>
                 </div>
             </div>
             <div class="nombre-apellido">
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Sexo</label>
-                    <select class="form-select" aria-label="Default select example">
+                    <select class="form-select" aria-label="Default select example" id="sexo" name="sexo" required>
                         <option value="femenino">Femenino</option>
                         <option value="masculino">Masculino</option>
                         <option value="nodecir">Prefiero no decirlo</option>
@@ -120,7 +122,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Edad</label>
-                    <select class="form-select" aria-label="Default select example">
+                    <select class="form-select" aria-label="Default select example" id="edad" name="edad" required>
                         <option value="infancia">0-11 Años</option>
                         <option value="adolecencia">12-18 Años</option>
                         <option value="juventud">19-26 Años</option>
@@ -132,17 +134,17 @@
             <div class="nombre-apellido">
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Celular</label>
-                    <input type="text" class="form-control" id="celular">
+                    <input type="text" class="form-control" id="celular" name="celular" required>
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
-                    <input type="text" class="form-control" id="email" placeholder="nombre@ejemplo.com">
+                    <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" name="email" required>
                 </div>
             </div>
             <div class="nombre-apellido">
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Municipio</label>
-                    <select class="form-select" aria-label="Default select example">
+                    <select class="form-select" aria-label="Default select example" id="municipio" name="municipio" required>
                         <option value="Medellin">Medellín</option>
                         <option value="Envigado">Envigado</option>
                         <option value="Bello">Bello</option>
@@ -234,11 +236,11 @@
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Dirección de residencia</label>
-                    <input type="text" class="form-control" id="residencia">
+                    <input type="text" class="form-control" id="residencia" name="residencia" required>
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Tipo de violencia</label>
-                    <select class="form-select" aria-label="Default select example">
+                    <select class="form-select" aria-label="Default select example" id="tipocaso" name="tipocaso" required>
                         <option value="fisica">Física</option>
                         <option value="verbal">Verbal</option>
                         <option value="sexual">Sexual</option>
@@ -246,12 +248,12 @@
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Descripción</label>
-                    <input type="text" class="form-control" id="detalle">
+                    <input type="text" class="form-control" id="detalle" name="detalle" required>
                 </div>
-                <button type="button" class="btn btn-primary">Enviar</button>
+                <button type="submit" value="Guardar" class="btn btn-success" name="registrar">Enviar</button>
             </div>
         </div>
-
+</div>
 
     </body>
 

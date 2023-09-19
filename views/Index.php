@@ -10,7 +10,7 @@
   <meta name="Keywords" content="Diseño Web, desarrollo, po,posicionamiento">
   <meta name="author" content="Render2Web">
 
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
@@ -27,10 +27,10 @@
 
       <nav>
         <ul>
-          <li class="actual"><a href="Index.html">Inicio</a></li>
-          <li><a href="Index2.html">Tipos de violencia</a></li>
+          <li class="actual"><a href="Index.php">Inicio</a></li>
+          <li><a href="Index2.php">Tipos de violencia</a></li>
           <li><a href="">Noticias</a></li>
-          <li><a href="Index3.html">Reportar</a>
+          <li><a href="Index3.php">Reportar</a>
           <li><a class="button1" data-bs-toggle="modal" data-bs-target="#exampleModal">Ingresar</a>
 
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -42,7 +42,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Volver"></button>
                   </div>
                   <div class="modal-body">
-                    <center><img src="img/cliente.png" width="70" height="70"></center>
+                    <center><img src="../img/cliente.png" width="70" height="70"></center>
                     <form>
                       <div class="mb-3">
                         <label for="recipient-name" class="col-form-label">Usuario:</label>
@@ -69,16 +69,16 @@
 
     <div class="slider" id="slider">
       <div class="slider__section">
-        <img src="img/img2.jpg" alt="" class="slider__img">
+        <img src="../img/img2.jpg" alt="" class="slider__img">
       </div>
       <div class="slider__section">
-        <img src="img/img2.jpg" alt="" class="slider__img">
+        <img src="../img/img2.jpg" alt="" class="slider__img">
       </div>
       <div class="slider__section">
-        <img src="img/img2.jpg" alt="" class="slider__img">
+        <img src="../img/img2.jpg" alt="" class="slider__img">
       </div>
       <div class="slider__section">
-        <img src="img/img2.jpg" alt="" class="slider__img">
+        <img src="../img/img2.jpg" alt="" class="slider__img">
       </div>
     </div>
     <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
@@ -144,7 +144,7 @@
       </div>
     </div>
 
-    <script src="js/slider.js"></script>
+    <script src="../js/slider.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
       integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
@@ -154,7 +154,7 @@
       integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
       crossorigin="anonymous"></script>
     <div class="social">
-      <img src="img/Telefono.png" alt="facebook" class="phone-image" onmouseover="showPhoneNumbers()"
+      <img src="../img/Telefono.png" alt="facebook" class="phone-image" onmouseover="showPhoneNumbers()"
         onmouseout="hidePhoneNumbers()"></a>
       <div id="phone-dialog">
         <h3>Líneas de Atención</h3>
