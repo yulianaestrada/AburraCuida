@@ -364,6 +364,11 @@ footer {
   height: 60%;
 }
 
+.error-message {
+  color: red;
+  display: none; /* Inicialmente oculta el mensaje de error */
+}
+
 .texto-centrado {
   text-align: center !important;
 }

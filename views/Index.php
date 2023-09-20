@@ -43,20 +43,21 @@
                   </div>
                   <div class="modal-body">
                     <center><img src="../img/cliente.png" width="70" height="70"></center>
-                    <form>
+                    <form action="logeo.php" method="POST">
                       <div class="mb-3">
                         <label for="recipient-name" class="col-form-label">Usuario:</label>
-                        <input type="text" class="form-control" id="usuario">
+                        <input type="text" class="form-control" id="username" name="username" required>
                       </div>
                       <div class="mb-3">
                         <label for="message-text" class="col-form-label">Contraseña:</label>
-                        <input type="password" class="form-control" id="clave">
+                        <input type="password" class="form-control" id="password" name="password" required>
                       </div>
+                      <div class="modal-footer justify-content-center">
+                      <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+                  </div>
                     </form>
                   </div>
-                  <div class="modal-footer justify-content-center">
-                    <button type="button" class="btn btn-primary">Iniciar sesión</button>
-                  </div>
+                 
                 </div>
               </div>
             </div>

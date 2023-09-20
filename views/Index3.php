@@ -1,3 +1,14 @@
+<?php
+// Crea un array con números del 1000 al 9999
+$numeros = range(1000, 9999);
+
+// Baraja (shuffle) el array
+shuffle($numeros);
+
+// Toma el primer número del array barajado
+$numeroAleatorio = array_shift($numeros);
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -84,7 +95,12 @@
     <form action="../includes/validar.php" method="POST">
     <div id="form">
         <div class="form mx-auto input-center">
-            <div class="nombre-apellido">
+        <center><h1>Reportar caso</h1></center>   
+        <div class="nombre-apellido">
+        <input type="integer"  class="form-control" id="id" name="id" value="<?php echo $numeroAleatorio; ?>" readonly> 
+        <input type="text"  class="form-control" id="fecha" name="fecha" value=" Fecha <?php echo $numeroAleatorio; ?>" readonly> 
+    </div>
+        <div class="nombre-apellido">
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Nombre</label>
                     <input type="text" class="form-control" id="nombre" name="nombre" required>
@@ -254,6 +270,16 @@
             </div>
         </div>
 </div>
+<script>
+        // Obtiene la fecha actual
+        var fechaActual = new Date();
+
+        // Formatea la fecha como "yyyy-mm-dd" (puedes cambiar el formato si lo deseas)
+        var fechaFormateada = fechaActual.getFullYear() + "-" + (fechaActual.getMonth() + 1).toString().padStart(2, '0') + "-" + fechaActual.getDate().toString().padStart(2, '0');
+
+        // Asigna la fecha formateada al campo de entrada
+        document.getElementById("fecha").value = fechaFormateada;
+    </script>
 
     </body>
 

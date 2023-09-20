@@ -3,11 +3,13 @@ $conexion= mysqli_connect("localhost","root","","aburracuida");
 
 if(isset($_POST['registrar'])){
 
-    if(strlen($_POST['nombre']) >=1 && strlen($_POST['apellido']) >=1 && strlen($_POST['tipo']) >=1 && 
+    if(strlen($_POST['nombre']) >= 1 && strlen($_POST['apellido']) >= 1 && strlen($_POST['tipo']) >= 1 &&
     strlen($_POST['identificacion']) >=1 && strlen($_POST['sexo']) >=1 && strlen($_POST['edad']) >=1 && 
     strlen($_POST['celular']) >=1 && strlen($_POST['email']) >=1 && strlen($_POST['municipio']) >=1 && 
     strlen($_POST['residencia']) >=1 && strlen($_POST['tipo']) >=1 && strlen($_POST['detalle']) >=1 ){
 
+        $id = trim($_POST['id']);
+        $fecha = trim($_POST['fecha']);
         $nombre = trim($_POST['nombre']);
         $apellido = trim($_POST['apellido']);
         $tipo = trim($_POST['tipo']);
@@ -21,9 +23,9 @@ if(isset($_POST['registrar'])){
         $tipocaso = trim($_POST['tipocaso']);
         $detalle = trim($_POST['detalle']);
 
-        $consulta= "INSERT INTO casos (nombre, apellido, tipo, identificacion, sexo, edad, celular, email,
+        $consulta= "INSERT INTO casos1 (id, fecha, nombre, apellido, tipo, identificacion, sexo, edad, celular, email,
         municipio, residencia, tipocaso, detalle) 
-        VALUES ('$nombre','$apellido','$tipo','$identificacion','$sexo','$edad','$celular','$email','$municipio','$residencia','$tipocaso','$detalle')";
+        VALUES ('$id','$fecha','$nombre','$apellido','$tipo','$identificacion','$sexo','$edad','$celular','$email','$municipio','$residencia','$tipocaso','$detalle')";
     
         mysqli_query($conexion, $consulta);
         mysqli_close($conexion);    

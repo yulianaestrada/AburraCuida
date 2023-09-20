@@ -35,47 +35,10 @@
 
             <nav>
                 <ul>
-                    <li><a href="Index.php">Inicio</a></li>
-                    <li><a href="Index2.php">Tipos de violencia</a></li>
-                    <li><a href="">Noticias</a></li>
-                    <li class="actual"><a href="Index3.php">Reportar</a>
-                    <li><a class="button1" data-bs-toggle="modal" data-bs-target="#exampleModal">Ingresar</a>
-
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel">¡Bienvenido de nuevo!</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Volver"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <form>
-                                            <div class="mb-3">
-                                                <label for="recipient-name" class="col-form-label">Usuario:</label>
-                                                <input type="text" class="form-control" id="usuario">
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="message-text" class="col-form-label">Contraseña:</label>
-                                                <input type="password" class="form-control" id="clave">
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Volver</button>
-                                        <button type="button" class="btn btn-primary">Iniciar sesión</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <li class="actual"><a href="casos.php">Casos registrados</a>
+                    <li><a class="button1" href="close.php">Salir</a>      
                 </ul>
             </nav>
-        </div>
-
-        </ul>
-        </nav>
         </div>
     </header>
     </head>
@@ -94,7 +57,7 @@
     }
 
     // Consulta SQL para obtener los registros de la tabla "casos"
-    $consulta = "SELECT * FROM casos";
+    $consulta = "SELECT * FROM casos1";
 
     // Ejecutar la consulta
     $resultado = mysqli_query($conexion, $consulta);
@@ -104,6 +67,8 @@
         echo '<table border="1" class="table">
                 <thead class="table-light">
                     <tr>
+                        <th>ID</th>
+                        <th>Fecha</th>
                         <th>Nombre</th>
                         <th>Apellido</th>
                         <th>Tipo</th>
@@ -123,6 +88,8 @@
         // Recorrer los registros y mostrarlos en la tabla
         while ($fila = mysqli_fetch_assoc($resultado)) {
             echo '<tr>
+                    <td>' . $fila['id'] . '</td>
+                    <td>' . $fila['fecha'] . '</td>
                     <td>' . $fila['nombre'] . '</td>
                     <td>' . $fila['apellido'] . '</td>
                     <td>' . $fila['tipo'] . '</td>
@@ -140,9 +107,6 @@
         }
         
         echo '</tbody></table>';
-        echo '<tr>
-        <a href="Index3.php" class="btn btn-success">Nuevo</a>
-      </tr>';
     } else {
         echo "No se encontraron registros en la base de datos.";
     }
