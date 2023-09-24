@@ -29,7 +29,7 @@
         <ul>
           <li class="actual"><a href="Index.php">Inicio</a></li>
           <li><a href="Index2.php">Tipos de violencia</a></li>
-          <li><a href="">Noticias</a></li>
+          <li><a href="">¿Qué Hago?</a></li>
           <li><a href="Index3.php">Reportar</a>
           <li><a class="button1" data-bs-toggle="modal" data-bs-target="#exampleModal">Ingresar</a>
 
@@ -73,10 +73,10 @@
         <img src="../img/img2.jpg" alt="" class="slider__img">
       </div>
       <div class="slider__section">
-        <img src="../img/img2.jpg" alt="" class="slider__img">
+        <img src="../img/img3.png" alt="" class="slider__img">
       </div>
       <div class="slider__section">
-        <img src="../img/img2.jpg" alt="" class="slider__img">
+        <img src="../img/img4.webp" alt="" class="slider__img">
       </div>
       <div class="slider__section">
         <img src="../img/img2.jpg" alt="" class="slider__img">

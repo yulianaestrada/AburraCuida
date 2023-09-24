@@ -48,7 +48,7 @@ $numeroAleatorio = array_shift($numeros);
                 <ul>
                     <li><a href="Index.php">Inicio</a></li>
                     <li><a href="Index2.php">Tipos de violencia</a></li>
-                    <li><a href="">Noticias</a></li>
+                    <li><a href="">¿Qué Hago?</a></li>
                     <li class="actual"><a href="Index3.php">Reportar</a>
                     <li><a class="button1" data-bs-toggle="modal" data-bs-target="#exampleModal">Ingresar</a>
 
@@ -102,7 +102,7 @@ $numeroAleatorio = array_shift($numeros);
     </div>
         <div class="nombre-apellido">
                 <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                    <label for="exampleFormControlInput1" class="form-label">Nombre víctima</label>
                     <input type="text" class="form-control" id="nombre" name="nombre" required>
                 </div>
                 <div class="mb-3">

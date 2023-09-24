@@ -35,7 +35,7 @@
 
             <nav>
                 <ul>
-                    <li class="actual"><a href="casos.php">Casos registrados</a>
+                    <li class="actual"><a href="casosBienestar.php">Casos registrados</a>
                     <li><a class="button1" href="close.php">Salir</a>      
                 </ul>
             </nav>
@@ -45,19 +45,24 @@
 <body>
   <p>
     
-    <center><h1>Casos de violencia psicológica</h1></center>
+    <center><h1>Casos de abuso infantil</h1></center>
     
     <?php
+    // Establecer la conexión a la base de datos (ajusta los valores según tu configuración)
     $conexion = mysqli_connect("localhost", "root", "", "aburracuida");
 
+    // Verificar la conexión
     if (!$conexion) {
         die("La conexión a la base de datos ha fallado: " . mysqli_connect_error());
     }
 
-    $consulta = "SELECT * FROM casos1 WHERE tipocaso = 'verbal'";
+    // Consulta SQL para obtener los registros de la tabla "casos"
+    $consulta = "SELECT * FROM casos1 WHERE edad = 'infancia' AND (tipocaso = 'fisica' OR tipocaso = 'sexual')";
 
+    // Ejecutar la consulta
     $resultado = mysqli_query($conexion, $consulta);
 
+    // Verificar si se encontraron registros
     if (mysqli_num_rows($resultado) > 0) {
         echo '<table border="1" class="table">
                 <thead class="table-light">
@@ -80,6 +85,7 @@
                 </thead>
                 <tbody>';
         
+        // Recorrer los registros y mostrarlos en la tabla
         while ($fila = mysqli_fetch_assoc($resultado)) {
             echo '<tr>
                     <td>' . $fila['id'] . '</td>
@@ -111,6 +117,7 @@
         echo "No tiene casos asociados";
     }
 
+    // Cerrar la conexión a la base de datos
     mysqli_close($conexion);
     ?>
 
@@ -119,6 +126,5 @@ function confirmTratado() {
     return confirm("¿Está seguro que el caso está tratado?");
 }
 </script>
-
 </body>
 </html>

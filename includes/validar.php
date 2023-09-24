@@ -30,7 +30,7 @@ if(isset($_POST['registrar'])){
         mysqli_query($conexion, $consulta);
         mysqli_close($conexion);    
 
-        header('Location: ../views/casos.php');
+        header('Location: ../views/index.php');
 
     }
     

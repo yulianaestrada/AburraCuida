@@ -47,16 +47,6 @@ ul {
   margin: 0;
   padding: 0;
 }
-
-.boton1 {
-  height: 38px;
-  background-color: #e8491d;
-  border: 0;
-  padding-right: 20px;
-  padding-left: 20px;
-  color: #ffff;
-}
-
 /*Encabezado*/
 header {
   background-color: #ccc;
@@ -80,7 +70,6 @@ header a {
   top: 50px;
   right: 0;
 }
-
 
 .social {
   top: 50%;
@@ -151,14 +140,6 @@ header .actual a {
 header a:hover {
   color: #16A085;
   font-weight: bold;
-}
-
-/*cabecera*/
-#cabecera {
-  min-height: 400px;
-  background: url('../img/metro3.jpg')no-repeat 0 -300px;
-  text-align: center;
-  color: #fff;
 }
 
 #cabecera h1 {
@@ -254,7 +235,6 @@ ul#servicios li {
   background-color: #e6e6e6;
 
 }
-
 /* pie */
 footer {
   padding: 20px;
@@ -335,8 +315,6 @@ footer {
   text-align: justify;
   /* Alineación del contenido en el centro */
 }
-
-
 /* Estilos CSS para la flecha triangular que apunta al teléfono */
 #phone-arrow {
   position: absolute;
@@ -362,11 +340,6 @@ footer {
   display: block;
   width: 100%;
   height: 60%;
-}
-
-.error-message {
-  color: red;
-  display: none; /* Inicialmente oculta el mensaje de error */
 }
 
 .texto-centrado {
