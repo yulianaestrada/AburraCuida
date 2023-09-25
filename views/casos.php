@@ -59,47 +59,38 @@
     $resultado = mysqli_query($conexion, $consulta);
 
     if (mysqli_num_rows($resultado) > 0) {
-        echo '<table border="1" class="table">
+        echo '<table border="1" class="table" style="width: 80%;">
                 <thead class="table-light">
                     <tr>
                         <th>ID</th>
                         <th>Fecha</th>
                         <th>Nombre</th>
                         <th>Apellido</th>
-                        <th>Tipo</th>
                         <th>Identificación</th>
-                        <th>Sexo</th>
-                        <th>Edad</th>
-                        <th>Celular</th>
-                        <th>Email</th>
-                        <th>Municipio</th>
-                        <th>Residencia</th>
-                        <th>Tipo de Caso</th>
-                        <th>Detalle</th>
+                        <th>Tipo de violencia</th>
                     </tr>
                 </thead>
                 <tbody>';
         
+        // Recorrer los registros y mostrarlos en la tabla
         while ($fila = mysqli_fetch_assoc($resultado)) {
             echo '<tr>
                     <td>' . $fila['id'] . '</td>
                     <td>' . $fila['fecha'] . '</td>
                     <td>' . $fila['nombre'] . '</td>
                     <td>' . $fila['apellido'] . '</td>
-                    <td>' . $fila['tipo'] . '</td>
                     <td>' . $fila['identificacion'] . '</td>
-                    <td>' . $fila['sexo'] . '</td>
-                    <td>' . $fila['edad'] . '</td>
-                    <td>' . $fila['celular'] . '</td>
-                    <td>' . $fila['email'] . '</td>
-                    <td>' . $fila['municipio'] . '</td>
-                    <td>' . $fila['residencia'] . '</td>
                     <td>' . $fila['tipocaso'] . '</td>
-                    <td>' . $fila['detalle'] . '</td>
                     <td>
                     <form method="post" action="tratarcaso.php" onsubmit="return confirmTratado();">
                     <input type="hidden" name="id" value="' . $fila['id'] . '">
-                    <button type="submit" class="btn btn-success" name="delete"><i class="fa fa-check-square"></i></button>
+                    <button type="submit" class="btn btn-success" name="delete">Tratado</button>
+                    </form>
+                    </td>
+                    <td>
+                    <form method="get" action="verPsicologo.php">
+                    <input type="hidden" name="id" value="' . $fila['id'] . '">
+                    <button type="submit" class="btn btn-success" name="ver">Ver</button>
                     </form>
                     </td>
                 </tr>';

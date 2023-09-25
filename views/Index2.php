@@ -9,10 +9,6 @@
   <meta name="descripcion" content="Diseño y Desarrollo Web">
   <meta name="Keywords" content="Diseño Web, desarrollo, po,posicionamiento">
   <meta name="author" content="Render2Web">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="msapplication-tap-highlight" content="no">
 
   <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,200,500,600,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -26,54 +22,52 @@
 </head>
 
 <body>
-  <header>
+<header>
     <div class="contenedor">
-      <div id="marca">
-        <h1><span class="resaltado"> Aburrá </span> Cuida</h1>
-      </div>
+        <div id="marca">
+            <h1><span class="resaltado">Aburrá</span> Cuida</h1>
+        </div>
 
-      <nav>
-        <ul>
-          <li><a href="Index.php">Inicio</a></li>
-          <li class="actual"><a href="Index2.php">Tipos de violencia</a></li>
-          <li><a href="">¿Qué Hago?</a></li>
-          <li><a href="Index3.php">Reportar</a>
-          <li><a class="button1" data-bs-toggle="modal" data-bs-target="#exampleModal">Ingresar</a>
-
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">¡Bienvenido de nuevo!</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Volver"></button>
-                  </div>
-                  <div class="modal-body">
-                    <form>
-                      <div class="mb-3">
-                        <label for="recipient-name" class="col-form-label">Usuario:</label>
-                        <input type="text" class="form-control" id="usuario">
-                      </div>
-                      <div class="mb-3">
-                        <label for="message-text" class="col-form-label">Contraseña:</label>
-                        <input type="password" class="form-control" id="clave">
-                      </div>
-                    </form>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Volver</button>
-                    <button type="button" class="btn btn-primary">Iniciar sesión</button>
-                  </div>
+        <nav>
+            <ul>
+                <li><a href="Index.php">Inicio</a></li>
+                <li class="actual"><a href="Index2.php">Tipos de violencia</a></li>
+                <li><a href="">¿Qué Hago?</a></li>
+                <li><a href="Index3.php">Reportar</a></li>
+                <li><a class="button1" data-bs-toggle="modal" data-bs-target="#exampleModal">Ingresar</a>
+                </li> 
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">¡Bienvenido de nuevo!</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Volver"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="usuario" class="col-form-label">Usuario:</label>
+                                        <input type="text" class="form-control" id="usuario">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="clave" class="col-form-label">Contraseña:</label>
+                                        <input type="password" class="form-control" id="clave">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Volver</button>
+                                <button type="button" class="btn btn-primary">Iniciar sesión</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-        </ul>
-      </nav>
+            </ul>
+        </nav>
     </div>
-    </ul>
-    </nav>
-    </div>
-  </header>
+</header>
   <style type="text/css">
     html {
       position: relative;
