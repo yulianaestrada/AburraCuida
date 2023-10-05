@@ -110,6 +110,10 @@
                 echo "<p class='detail-label'>Residencia:</p> <p class='detail-value'>" . $fila['residencia'] . "</p>";
                 echo "<p class='detail-label'>Violencia presentada:</p> <p class='detail-value'>" . $fila['tipocaso'] . "</p>";
                 echo "<p class='detail-label'>Detalles:</p> <p class='detail-value'>" . $fila['detalle'] . "</p>";
+                echo "<p class='detail-label'>Factor:</p> <p class='detail-value'>" . $fila['Factor'] . "</p>";
+                echo "<p class='detail-label'>Nombre agresor::</p> <p class='detail-value'>" . $fila['nombreagresor'] . "</p>";
+                echo "<p class='detail-label'>Dirección agresor:</p> <p class='detail-value'>" . $fila['direagresor'] . "</p>";
+                echo "<p class='detail-label'>Parentesco:</p> <p class='detail-value'>" . $fila['Parentesco'] . "</p>";
 
             } else {
                 echo "Error al obtener los datos del registro.";

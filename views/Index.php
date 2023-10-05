@@ -29,7 +29,7 @@
         <ul>
           <li class="actual"><a href="Index.php">Inicio</a></li>
           <li><a href="Index2.php">Tipos de violencia</a></li>
-          <li><a href="">¿Qué Hago?</a></li>
+          <li><a href="Hacer.php">¿Qué Hago?</a></li>
           <li><a href="Index3.php">Reportar</a>
           <li><a class="button1" data-bs-toggle="modal" data-bs-target="#exampleModal">Ingresar</a>
 

@@ -48,7 +48,7 @@ $numeroAleatorio = array_shift($numeros);
                 <ul>
                     <li><a href="Index.php">Inicio</a></li>
                     <li><a href="Index2.php">Tipos de violencia</a></li>
-                    <li><a href="">¿Qué Hago?</a></li>
+                    <li><a href="Hacer.php">¿Qué Hago?</a></li>
                     <li class="actual"><a href="Index3.php">Reportar</a>
                     <li><a class="button1" data-bs-toggle="modal" data-bs-target="#exampleModal">Ingresar</a>
 
@@ -100,9 +100,14 @@ $numeroAleatorio = array_shift($numeros);
         <input type="integer"  class="form-control" id="id" name="id" value="<?php echo $numeroAleatorio; ?>" readonly> 
         <input type="text"  class="form-control" id="fecha" name="fecha" value=" Fecha <?php echo $numeroAleatorio; ?>" readonly> 
     </div>
+&nbsp;
+  &nbsp;
+  &nbsp;
+  &nbsp;
+    <h3>Datos víctima</h3>
         <div class="nombre-apellido">
                 <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Nombre víctima</label>
+                    <label for="exampleFormControlInput1" class="form-label">Nombre </label>
                     <input type="text" class="form-control" id="nombre" name="nombre" required>
                 </div>
                 <div class="mb-3">
@@ -266,7 +271,39 @@ $numeroAleatorio = array_shift($numeros);
                     <label for="exampleFormControlInput1" class="form-label">Descripción</label>
                     <input type="text" class="form-control" id="detalle" name="detalle" required>
                 </div>
+                <div class="mb-3">
+                <h3>Datos agresor</h3>
+                </div>
+</div>
+                <div class="nombre-apellido">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Factor</label>
+                    <select class="form-select" aria-label="Default select example" id="Factor" name="Factor" required>
+                        <option value="Agresor interno">Agresor interno</option>
+                        <option value="Agresor externo">Agresor Externo</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Nombre completo</label>
+                    <input type="text" class="form-control" id="nombreagresor" name="nombreagresor" required>
+                </div>
+            </div>
+            <div class="nombre-apellido">
+            <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Dirección de residencia</label>
+                    <input type="text" class="form-control" id="direagresor" name="direagresor" required>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Parentesco</label>
+                    <select class="form-select" aria-label="Default select example" id="Parentesco" name="Parentesco" required>
+                        <option value="Padres">Padre/Madre</option>
+                        <option value="Pareja">Pareja</option>
+                        <option value="Hijos">Hijos</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
                 <button type="submit" value="Guardar" class="btn btn-success" name="registrar">Enviar</button>
+            </div>
             </div>
         </div>
 </div>
@@ -280,7 +317,31 @@ $numeroAleatorio = array_shift($numeros);
         // Asigna la fecha formateada al campo de entrada
         document.getElementById("fecha").value = fechaFormateada;
     </script>
+    
+    <div class="social">
+      <img src="../img/Telefono.png" alt="facebook" class="phone-image" onmouseover="showPhoneNumbers()"
+        onmouseout="hidePhoneNumbers()"></a>
+      <div id="phone-dialog">
+        <h3>Líneas de Atención</h3>
+        <ul>
+          <li>Línea púrpura: 01 8000 112 137</li>
+          <li>Comisaría de familia: 380 8400</li>
+        </ul>
+      </div>
+      <script>
+        // Función para mostrar el cuadro de diálogo de números telefónicos
+        function showPhoneNumbers() {
+          const phoneDialog = document.getElementById("phone-dialog");
+          phoneDialog.style.display = "block";
+        }
 
-    </body>
+        // Función para ocultar el cuadro de diálogo de números telefónicos
+        function hidePhoneNumbers() {
+          const phoneDialog = document.getElementById("phone-dialog");
+          phoneDialog.style.display = "none";
+        }
+      </script>
+    </div>
+</body>
 
 </html>

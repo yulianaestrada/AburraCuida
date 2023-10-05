@@ -31,8 +31,8 @@
         <nav>
             <ul>
                 <li><a href="Index.php">Inicio</a></li>
-                <li class="actual"><a href="Index2.php">Tipos de violencia</a></li>
-                <li><a href="Hacer.php">¿Qué Hago?</a></li>
+                <li><a href="Index2.php">Tipos de violencia</a></li>
+                <li class="actual"><a href="Hacer.php">¿Qué Hago?</a></li>
                 <li><a href="Index3.php">Reportar</a></li>
                 <li><a class="button1" data-bs-toggle="modal" data-bs-target="#exampleModal">Ingresar</a>
                 </li> 
@@ -98,18 +98,20 @@
         <div class="col-md-4 col-sm-6 col-xs-12">
           <article class="material-card Red">
             <h2>
-              <span>Violencia Física</span>
+              <span>Asistencia telefónica</span>
             </h2>
             <div class="mc-content">
               <div class="img-container">
-                <img class="img-responsive" src="../img/V1.png" width="300">
+                <img class="img-responsive" src="../img/telef.png" width="300">
               </div>
               <div class="mc-description">
-                La violencia física se refiere a la utilización de la fuerza
-                física con la intención de causar daño o lesiones a otra persona.
-                Puede manifestarse de diversas formas, desde agresiones físicas directas como golpes,
-                patadas, puñetazos, estrangulamiento o el uso de armas, hasta formas más sutiles como
-                empujones, mordiscos o arañazos.
+              Se tiene a disposición el teléfono gratuito 016, este está operativo los 365 días 
+              del año durante las 24 horas y no deja rastro en la factura, por lo que nadie sabrá 
+              que han llamado al revisarla. En caso de que la llamada se produzca en una situación 
+              de peligro inmediato, el equipo de profesionales que operan allí derivan la llamada al 
+              teléfono de emergencias 112.
+              También puede dar "clic" en el télefono que aparece en la parte inferior derecha de la pantalla,
+              en dónde mostrará más líneas de atención disponibles.
               </div>
             </div>
             <a class="mc-btn-action">
@@ -120,19 +122,19 @@
         <div class="col-md-4 col-sm-6 col-xs-12">
           <article class="material-card Pink">
             <h2>
-              <span>Violencia Verbal</span>
+              <span>Acudir a un hospital</span>
             </h2>
             <div class="mc-content">
               <div class="img-container">
-                <img class="img-responsive" src="../img/V2.png" width="300">
+                <img class="img-responsive" src="../img/hospital.png" width="300">
               </div>
               <div class="mc-description">
-                La violencia verbal se refiere a la utilización de palabras,
-                expresiones ofensivas o amenazantes con la
-                intención de causar daño emocional, psicológico o moral a otra persona.
-                Este tipo de violencia puede manifestarse de diversas maneras, incluyendo insultos,
-                humillaciones, desprecios, amenazas verbales, gritos, burlas y cualquier
-                forma de comunicación verbal que sea abusiva o agresiva.
+              El siguiente paso es acudir a un hospital o centro de salud con el propósito 
+              de que el equipo de médicos que corresponda, haga un reconocimiento completo y 
+              determine los daños sufridos. En este sentido, en caso de haber sufrido una violación, 
+              solo hay que solicitar al personal que hagan una revisión específica. En cualquier caso, 
+              ellos serán los encargados, sin intervención de la víctima, de trasladar el parte médico 
+              a las entidades pertinentes.
               </div>
             </div>
             <a class="mc-btn-action">
@@ -143,18 +145,19 @@
         <div class="col-md-4 col-sm-6 col-xs-12">
           <article class="material-card Purple">
             <h2>
-              <span>Violencia Sexual</span>
+              <span>Abandonar domicilio</span>
             </h2>
             <div class="mc-content">
               <div class="img-container">
-                <img class="img-responsive" src="../img/V3.png" width="300">
+                <img class="img-responsive" src="../img/casa.png" width="300">
               </div>
               <div class="mc-description">
-                La violencia sexual es un tipo de agresión sexual que involucra el uso de la fuerza,
-                coerción, manipulación o cualquier forma de presión para obligar a una persona a
-                participar en actos sexuales no deseados o no consensuados. Este tipo de violencia
-                puede ocurrir en diversas situaciones, incluyendo relaciones
-                íntimas, situaciones de desconocidos o incluso en entornos familiares o laborales.
+              Las víctimas deben saber que no tienen por qué 
+              tener miedo a salir de su domicilio. De hecho, pueden hacerlo libremente 
+              sin renunciar a ninguno de sus derechos tras interponer la denuncia. 
+              Sin embargo, también pueden hacerlo en las mismas condiciones siempre y cuando la 
+              interpongan en los 30 días siguientes. Por su parte, en caso de que se posea algún temor a regresar 
+              para recoger los objetos personales, la Guardia Civil y la Policía acompañarán a la víctima
               </div>
             </div>
             <a class="mc-btn-action">
