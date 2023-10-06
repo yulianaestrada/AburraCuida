@@ -87,15 +87,18 @@
                     <td>' . $fila['identificacion'] . '</td>
                     <td>' . $fila['tipocaso'] . '</td>
                     <td>
-                    <form method="post" action="tratarcaso.php" onsubmit="return confirmTratado();">
-                    <input type="hidden" name="id" value="' . $fila['id'] . '">
-                    <button type="submit" class="btn btn-success" name="delete">Tratado</button>
-                    </form>
-                    </td>
-                    <td>
                     <form method="get" action="ver.php">
                     <input type="hidden" name="id" value="' . $fila['id'] . '">
                     <button type="submit" class="btn btn-success" name="ver">Ver</i></button>
+                    </form>
+                    </td>
+                    <td>
+                    <button type="submit" class="btn btn-success" id="enviarCorreo"><i class="fa fa-envelope-o"></i></button>
+                    </td>
+                    <td>
+                    <form method="post" action="tratarcaso.php" onsubmit="return confirmTratado();">
+                    <input type="hidden" name="id" value="' . $fila['id'] . '">
+                    <button type="submit" class="btn btn-danger" name="delete">Tratado</button>
                     </form>
                     </td>
             </tr>';
@@ -116,5 +119,6 @@ function confirmTratado() {
     return confirm("¿Está seguro que el caso está tratado?");
 }
 </script>
+<script src="../js/correopolicia.js"></script>
 </body>
 </html>

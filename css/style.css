@@ -121,22 +121,6 @@ header .actual a {
   border-radius: 35px;
 }
 
-.button2 {
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 15px;
-  color: #333333;
-  padding-top: 8px;
-  padding-bottom: 7px;
-  padding-left: 40px;
-  padding-right: 40px;
-  background-color: #E74C3C;
-  border-color: #d8d8d8;
-  border-width: 3px;
-  border-style: solid;
-  border-radius: 35px;
-}
-
 header a:hover {
   color: #16A085;
   font-weight: bold;
@@ -233,15 +217,6 @@ ul#servicios li {
   border: 1px solid #cccc;
   margin-bottom: 10px;
   background-color: #e6e6e6;
-
-}
-/* pie */
-footer {
-  padding: 20px;
-  margin-top: 20px;
-  color: #ffff;
-  background-color: #16A085;
-  text-align: center;
 
 }
 

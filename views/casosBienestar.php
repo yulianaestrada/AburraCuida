@@ -87,15 +87,15 @@
                     <td>' . $fila['identificacion'] . '</td>
                     <td>' . $fila['tipocaso'] . '</td>
                     <td>
-                    <form method="post" action="tratarcaso.php" onsubmit="return confirmTratado();">
-                    <input type="hidden" name="id" value="' . $fila['id'] . '">
-                    <button type="submit" class="btn btn-success" name="delete">Tratado</button>
-                    </form>
-                    </td>
-                    <td>
                     <form method="get" action="verBienestar.php">
                     <input type="hidden" name="id" value="' . $fila['id'] . '">
                     <button type="submit" class="btn btn-success" name="ver">Ver</button>
+                    </form>
+                    </td>
+                    <td>
+                    <form method="post" action="tratarcaso.php" onsubmit="return confirmTratado();">
+                    <input type="hidden" name="id" value="' . $fila['id'] . '">
+                    <button type="submit" class="btn btn-danger" name="delete">Tratado</button>
                     </form>
                     </td>
                 </tr>';
