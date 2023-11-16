@@ -36,6 +36,7 @@
             <nav>
                 <ul>
                     <li class="actual"><a href="casos.php">Casos registrados</a>
+                    <li><a href="agendaPsicologo.php">Agenda</a></li>
                     <li><a class="button1" href="close.php">Salir</a>      
                 </ul>
             </nav>
