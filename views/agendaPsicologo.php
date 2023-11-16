@@ -79,7 +79,7 @@ $numeroAleatorio = array_shift($numeros);
 <body>
   <p>
     
-    <center><h1>Mi agenda</h1></center>
+    <center><h1>Próximas Entrevistas</h1></center>
     <?php
 // Verificar si se ha enviado el formulario
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
